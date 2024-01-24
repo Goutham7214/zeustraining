@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+.container{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.heading-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 30px;
+}
+.body-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#input-box{
+    width: 50%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffff;
+    background-color: rgb(215, 170, 170);
+}
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffff;
+    background-color: rgb(215, 170, 170);
+    cursor: pointer;
+}
+::placeholder{
+    color: #ffff;
+}
+
+.lists{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    padding: 12px 8px 12px 50px;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url('./img/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    left: 725px;
+}
+
+ul li.checked{
+    color: red;
+}
+
+ul li.checked::before{
+    background-image: url('./img/checked.png');
+}
+
+ul li span{
+    position: absolute;
+    margin-left: 100px;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+}
+ul li span:hover{
+    background: #edeef0;
+}
